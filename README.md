@@ -1,2 +1,2 @@
-# lit num app
-Literacy and Numeracy Mobile Application Project for the completion of the subject Capstone I & II
+# Literacy and Num Mobile Application
+Literacy and Numeracy Mobile Application Project for the completion of the subjects Capstone I & II
