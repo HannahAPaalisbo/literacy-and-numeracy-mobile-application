@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="36dp"
+    android:paddingBottom="22dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="You got a score of"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/pri_font" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtLabel"
+        android:text="#"
+        android:textSize="128sp"
+        android:textStyle="bold"
+        android:textColor="#78D917" />
+
+    <TextView
+        android:id="@+id/txtLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtScore"
+        android:text="out of #"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/pri_font" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true" >
+        <ImageView
+            android:id="@+id/btnRestart"
+            android:layout_width="124dp"
+            android:layout_height="57dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/btnView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="33dp"
+            android:src="@drawable/ic_restart"/>
+
+        <ImageView
+            android:id="@+id/btnView"
+            android:layout_width="124dp"
+            android:layout_height="57dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="33dp"
+            android:src="@drawable/ic_view" />
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="124dp"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/btnView"
+            android:src="@drawable/ic_home" />
+    </LinearLayout>
+</RelativeLayout>

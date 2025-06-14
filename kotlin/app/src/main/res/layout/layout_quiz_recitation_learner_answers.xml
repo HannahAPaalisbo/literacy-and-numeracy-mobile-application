@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="#"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/pri_font" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtNumber"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:text="Question Text"
+        android:textSize="20sp"
+        android:textColor="@color/pri_font" />
+
+    <TextView
+        android:id="@+id/txtAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNumber"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="54dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="39dp"
+        android:text="User Answer"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:background="@drawable/input_container"
+        android:paddingTop="12dp"
+        android:paddingLeft="21dp"
+        android:paddingBottom="12dp"
+        android:paddingRight="21dp"
+        android:textColor="#74707B"
+        android:textAllCaps="true"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_height="1dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/txtAnswer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="28dp"
+        android:background="#74707B"/>
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:text="User"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:background="@color/progress_main"
+        android:paddingTop="12dp"
+        android:paddingLeft="21dp"
+        android:paddingBottom="12dp"
+        android:paddingRight="21dp"
+        android:textColor="@color/progress_label"
+        android:textAllCaps="true"/>
+
+</RelativeLayout>

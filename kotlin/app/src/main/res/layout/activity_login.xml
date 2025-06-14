@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnSubject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/def_bg"
+    android:clickable="true"
+    android:focusable="true">
+
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:maxLines="1"
+        android:layout_marginTop="67dp"
+        android:hint="Enter your ID Number"
+        android:background="@drawable/input_container"
+        android:paddingLeft="20dp"
+        android:textSize="12sp"
+        android:textColor="@color/pri_font"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtLogin"
+        android:textColorHint="#74707B"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogin" />
+
+    <RelativeLayout
+        android:id="@+id/containerLN"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/etUser"
+        android:background="@drawable/input_container">
+        <EditText
+            android:id="@+id/etLastname"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:textSize="12sp"
+            android:textColor="@color/pri_font"
+            android:textColorHint="#74707B"
+            android:background="@android:color/transparent"
+            android:hint="Enter your last name"/>
+
+        <ImageView
+            android:id="@+id/btnPass"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_hide_pass" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="LOGIN"
+        android:textSize="32sp"
+        android:textColor="@color/pri_font"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Login"
+        android:backgroundTint="#FFAA28"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/containerLN" />
+
+</RelativeLayout>

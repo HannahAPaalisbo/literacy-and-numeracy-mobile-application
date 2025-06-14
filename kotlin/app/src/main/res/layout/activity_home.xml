@@ -1,0 +1,99 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/btnSubject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/def_bg"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/txtGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/sec_font"
+            android:text="Hello!"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/txtUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@id/btnAchievements"
+            android:layout_below="@id/txtGreeting"
+            android:textColor="@color/pri_font"
+            android:text="Firstname Lastname"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/btnAchievements"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toLeftOf="@id/button"
+            app:srcCompat="@drawable/achievements"  />
+
+        <ImageView
+            android:id="@+id/button"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/settings" />
+
+        <TextView
+            android:id="@+id/txtInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="41dp"
+            android:layout_toLeftOf="@id/btnAchievements"
+            android:layout_below="@id/txtUser"
+            android:textColor="@color/pri_font"
+            android:text="Choose what you would like to learn today"
+            android:textSize="20sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtInstructions"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="28dp"
+            android:layout_alignParentBottom="true"
+            android:fadeScrollbars="false"
+            android:paddingBottom="8dp">
+
+            <GridLayout
+                android:id="@+id/parentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alignmentMode="alignBounds"
+                android:orientation="horizontal"
+                android:rowCount="1"></GridLayout>
+        </HorizontalScrollView>
+
+
+    </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

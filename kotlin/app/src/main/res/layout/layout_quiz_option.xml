@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="38.11dp"
+        android:layout_height="38.11dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/txtTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject: QuizName"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:layout_marginLeft="19.57dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/pri_font"
+        android:layout_toRightOf="@id/imgBack"
+        android:layout_above="@id/scrollView"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBack"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnDisplayOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginRight="32dp"
+            android:text="Display Only"
+            android:backgroundTint="@color/progress_main"
+            android:drawableLeft="@drawable/ic_present"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="AutoProfiler"/>
+
+        <Button
+            android:id="@+id/btnRecitation"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_toEndOf="@+id/btnDisplayOnly"
+            android:text="Recitation"
+            android:backgroundTint="@color/progress_main"
+            android:drawableLeft="@drawable/ic_recite"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="AutoProfiler"/>
+    </LinearLayout>
+</RelativeLayout>

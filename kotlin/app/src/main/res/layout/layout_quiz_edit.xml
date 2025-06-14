@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/def_bg">
+    <ScrollView
+        android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="26dp"
+        android:paddingTop="28dp">
+
+    </ScrollView>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dp"
+        android:backgroundTint="@color/progress_main"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</RelativeLayout>

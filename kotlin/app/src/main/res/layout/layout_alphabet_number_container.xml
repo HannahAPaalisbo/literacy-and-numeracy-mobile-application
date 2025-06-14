@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/actualLayout"
+    android:layout_width="63dp"
+    android:layout_height="71dp"
+    android:layout_marginRight="29dp"
+    android:background="@drawable/def_container_bg"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/txtSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:text="Subject/Topic"
+        android:textAlignment="center"
+        android:textColor="@color/pri_font"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/txtSubject"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:progressDrawable="@drawable/home_progress_bar" />
+
+    <TextView
+        android:id="@+id/txtProgress"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/txtSubject"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="0%"
+        android:textColor="@color/progress_label"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

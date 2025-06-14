@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/def_bg"
+    tools:context=".SpellingActivity">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="38.11dp"
+        android:layout_height="38.11dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/txtInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instruction"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:layout_marginLeft="19.57dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/pri_font"
+        android:layout_toRightOf="@id/imgBack"
+        android:layout_alignParentTop="true"/>
+
+    <GridLayout
+        android:id="@+id/letterView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignBounds"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@id/buttonView"
+        android:layout_margin="18dp"
+        android:layout_centerHorizontal="true">
+    </GridLayout>
+    <GridLayout
+        android:id="@+id/buttonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignBounds"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+    </GridLayout>
+</RelativeLayout>

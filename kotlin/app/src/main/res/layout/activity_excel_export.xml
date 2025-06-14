@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/def_bg"
+    android:clickable="true">
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Last Name, First Name - Record"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/pri_font"/>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/header"
+        android:layout_above="@id/spinner2">
+        <LinearLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:prompt="@string/spinner1_prompt"
+        android:textSize="18sp"
+        android:textColor="@color/pri_font"
+        android:layout_above="@id/spinner3"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/def_container_bg"
+        android:popupBackground="@drawable/def_container_bg"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="12dp"
+        android:spinnerMode="dropdown"
+        />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:textColor="@color/pri_font"
+        android:prompt="@string/spinner2_prompt"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/spinner3"
+        android:background="@drawable/def_container_bg"
+        android:popupBackground="@drawable/def_container_bg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="12dp"
+        android:spinnerMode="dropdown"/>
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textView"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/def_container_bg"
+        android:padding="12dp"
+        android:popupBackground="@drawable/def_container_bg"
+        android:prompt="@string/spinner_prompt"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/pri_font"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/spinner"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/def_container_bg"
+        android:padding="12dp"
+        android:popupBackground="@drawable/def_container_bg"
+        android:prompt="@string/spinner3_prompt"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/pri_font"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:textColor="@color/pri_font"
+        android:prompt="@string/spinner_prompt"
+        android:layout_above="@id/textView3"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/def_container_bg"
+        android:popupBackground="@drawable/def_container_bg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="12dp"
+        android:spinnerMode="dropdown"/>
+
+    <EditText
+        android:id="@+id/textView3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Score"
+        android:textSize="20sp"
+        android:textColor="@color/pri_font"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@id/button2"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Add Student"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/progress_main" />
+
+    <View
+        android:id="@+id/spacer2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/spinner"
+        android:layout_toLeftOf="@id/button2"
+        android:layout_toRightOf="@id/button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/white"
+        android:text="Export as Grade"
+        android:backgroundTint="@color/progress_main" />
+
+
+</RelativeLayout>

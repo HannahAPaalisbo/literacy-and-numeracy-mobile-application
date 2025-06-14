@@ -1,0 +1,66 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/btnSubject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/def_bg"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/txtUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pri_font"
+                android:text="What are you?"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnLearner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFAA28"
+                    android:textColor="@color/white"
+                    android:text="Learner"
+                    android:layout_marginTop="21dp"
+                    android:layout_below="@id/txtUser"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="32dp"
+                    android:layout_height="1dp" />
+
+                <Button
+                    android:id="@+id/btnTeacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFAA28"
+                    android:textColor="@color/white"
+                    android:text="Teacher"
+                    android:layout_marginTop="21dp"
+                    android:layout_below="@id/txtUser"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

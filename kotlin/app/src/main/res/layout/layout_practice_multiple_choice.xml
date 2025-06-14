@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="21dp"
+    android:background="@color/def_bg">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="38.11dp"
+        android:layout_height="38.11dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="34.89dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnBack"
+        android:layout_marginLeft="18dp"
+        android:text="What is the Tagakaulo word based on the picture"
+        android:textSize="20sp"
+        android:textColor="@color/pri_font" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imgContainer"
+        android:layout_width="231dp"
+        android:layout_height="231dp"
+        android:layout_below="@id/btnBack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="46dp"
+        android:layout_gravity="center"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/no_media" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/imgContainer"
+        android:layout_below="@id/btnBack"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="72dp">
+
+        <Button
+            android:id="@+id/btnChoice1"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/progress_main"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Option A"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/btnChoice2"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/progress_main"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Option B"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/btnChoice3"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/progress_main"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Option C"
+            android:layout_weight="2"/>
+    </LinearLayout>
+</RelativeLayout>

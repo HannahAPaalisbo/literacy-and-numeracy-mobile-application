@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btnTopic"
+    android:layout_width="167dp"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/ic_launcher" />
+    <TextView
+        android:id="@+id/lblKalagan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/img1"
+        android:text="Tagakaulo:" />
+
+    <TextView
+        android:id="@+id/lblFilipino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/lblKalagan"
+        android:text="Filipino:" />
+
+    <TextView
+        android:id="@+id/lblEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/lblFilipino"
+        android:text="English:" />
+
+    <TextView
+        android:id="@+id/txtKalagan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_toRightOf="@id/lblKalagan"
+        android:text="TWord"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtFilipino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtKalagan"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_toRightOf="@id/lblFilipino"
+        android:text="FWord"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/txtFilipino"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_toRightOf="@id/lblEnglish"
+        android:text="EWord" />
+
+</RelativeLayout>

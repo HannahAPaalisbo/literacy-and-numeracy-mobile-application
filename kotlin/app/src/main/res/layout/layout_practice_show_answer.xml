@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/def_bg"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="ang sagot tamang sagot ay"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/pri_font" />
+
+    <TextView
+        android:id="@+id/txtAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtLabel"
+        android:text="Answer"
+        android:textSize="128sp"
+        android:textStyle="bold"
+        android:textColor="#78D917" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/imgContainer"
+    android:layout_width="150dp"
+    android:layout_height="170dp"
+    android:layout_below="@id/btnBack"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="34dp"
+    android:layout_marginLeft="45dp"
+    android:layout_marginRight="46dp"
+    android:layout_gravity="center"
+    android:elevation="10dp"
+    app:cardCornerRadius="20dp">
+    <RelativeLayout
+        android:id="@+id/btnSubject"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/home_finished_container"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/txtSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:text="Subject/Topic"
+            android:textAlignment="center"
+            android:textColor="@color/progress_label"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSubject"
+            android:layout_marginBottom="19dp"
+            android:text="Category"
+            android:textAlignment="center"
+            android:textColor="#EE770E"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

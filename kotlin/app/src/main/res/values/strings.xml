@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ka-Ede</string>
+    <string name="spinner_prompt">Select a Subject</string>
+    <string name="spinner1_prompt">Select Record List</string>
+    <string name="spinner2_prompt">Select Quarter</string>
+    <string name="spinner3_prompt">Select Quiz</string>
+    <string name="student_prompt">Select Student</string>
+</resources>
